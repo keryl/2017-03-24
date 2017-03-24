@@ -1,16 +1,14 @@
 def typeof(x):
-    for x in typeof():
-        if typeof(x) == str:
-            return 'string'
-        elif typeof(x) == number:
-            return 'number'
-        elif typeof(x) == number:
-            return 'number'
-        elif typeof(x) == array:
-            return 'array'
-        elif typeof(x) == dict:
-            return 'dict'
-        elif typeof(x) == unknown:
-            return 'unknown'
-        else:
-            pass
+
+    type_of_x = type(x)
+
+    if type_of_x == str:
+        return 'string'
+    elif type_of_x == int or type_of_x == float:
+        return 'number'
+    elif type_of_x == list:
+        return 'array'
+    elif type_of_x == dict:
+        return 'dict'
+    else:
+        return 'unknown'
