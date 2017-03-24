@@ -1,6 +1,6 @@
 def is_even_num(l):
-    enum = []
+    even_number = []
     for n in l:
         if n % 2 == 0:
-            enum.append(n)
-    return enum
+            even_number.append(n)
+    return even_number
